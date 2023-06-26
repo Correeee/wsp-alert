@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Nav from './components/nav/nav';
+import Login from './components/login/login';
+import './styles.css'
+import Register from './components/register/register';
+import { Toaster } from 'react-hot-toast';
+import AuthProvider, { AuthContext } from './context/authContext';
+import { useContext } from 'react';
+import Tasks from './components/tasks/tasks';
+import Footer from './footer/footer';
+
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AuthProvider >
+        <BrowserRouter>
+          <Nav />
+          <Routes>
+            <Route path='/' element={<Login />} />
+            <Route path='/Register' element={<Register />} />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+        <Toaster toastOptions={{
+          style: {
+            fontSize: '1.5rem',
+            textAlign: 'center'
+          }
+        }} />
+      </AuthProvider>
     </div>
   );
 }

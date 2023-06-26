@@ -1,0 +1,55 @@
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    background-color: #222E35;
+    height: 7rem;
+    background-image: url(../../assets/nav.jpg);
+    background-size: contain;
+    background-position: center;
+    border-bottom: 1px solid var(--color-green);
+}
+
+.nav__user{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 30rem;
+}
+
+.nav__user h3{
+    color: black;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav__login{
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav__user img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 2px solid var(--color-green);
+    background-color: white;
+    object-fit: contain;
+}
+
+.nav__user button{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
