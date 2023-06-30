@@ -24,6 +24,15 @@
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: center;
+    width: 30rem;
+}
+
+.ItemTask input{
+    width: 15rem;
+}
+
+.ItemTask button{
+    width: 15rem;
 }
 
 .ItemTask__title{

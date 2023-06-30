@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import logo from '../../assets/DALL·E 2023-06-24 01.18.57 - whatsapp + alarm.png'
 import { AuthContext } from '../../context/authContext'
 import Tasks from '../tasks/tasks'
+import Loader from '../loader/loader'
 
 
 

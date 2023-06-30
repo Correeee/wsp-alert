@@ -4,9 +4,7 @@ import Login from './components/login/login';
 import './styles.css'
 import Register from './components/register/register';
 import { Toaster } from 'react-hot-toast';
-import AuthProvider, { AuthContext } from './context/authContext';
-import { useContext } from 'react';
-import Tasks from './components/tasks/tasks';
+import AuthProvider from './context/authContext';
 import Footer from './footer/footer';
 
 

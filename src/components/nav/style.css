@@ -44,7 +44,7 @@
     border-radius: 50%;
     border: 2px solid var(--color-green);
     background-color: white;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .nav__user button{
@@ -52,4 +52,27 @@
     border: 1px solid black;
     border-radius: 50%;
     padding: 0.5rem;
+}
+
+.btn__notifications{
+    position: relative;
+}
+
+.btn__number{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-green);
+    top: 70%;
+    left: 70%;
+    background-color: white;
+    border-radius: 50px;
+    border: 1px solid var(--color-green);
+    width: 2rem;
+    height: 2rem;
+    padding: 0 0;
+    font-size: 1rem;
+    font-weight: bold;
 }

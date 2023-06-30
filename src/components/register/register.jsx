@@ -38,7 +38,7 @@ const Register = () => {
 
         if (name, surName, email, image, password, wsp) {
 
-            const storageRef = ref(storage, wsp)
+            const storageRef = ref(storage, wsp.split('+').join(''))
 
             toast.promise(createUserWithEmailAndPassword(auth, email, password), {
                 loading: 'Registrando usuario...',
@@ -57,7 +57,8 @@ const Register = () => {
                                     email,
                                     image: url,
                                     wsp,
-                                    date: Timestamp.fromDate(new Date())
+                                    date: Timestamp.fromDate(new Date()),
+                                    tasks: []
                                 })
                             })
                     })
